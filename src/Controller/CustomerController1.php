@@ -29,7 +29,7 @@ class CustomerController1 extends AbstractApiController
     }
     
     /**
-     * @Route("/api/customers/new", name="app_customer_new", methods={"POST"})
+     * @Route("/api/customers", name="app_customer_new", methods={"POST"})
      */
     public function newAction(Request $request, EntityManagerInterface $em, 
     NormalizerInterface $serializer, ValidatorInterface $validator): Response 
